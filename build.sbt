@@ -7,6 +7,7 @@ lazy val root = (project in file("."))
     scalaVersion := "2.13.4",
     version := "0.1.0-SNAPSHOT",
     libraryDependencies ++= Seq(
+      compilerPlugin(kindProjector),
       scalaTest % Test,
       fs2Core,
       fs2Io,
